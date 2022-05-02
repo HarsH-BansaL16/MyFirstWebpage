@@ -105,7 +105,7 @@ nav ul li a:hover:after {
     font-weight: 900;
     line-height: 90px;
     text-transform: inherit;
-    width: 47%;
+    width: 50%;
 }
 
 .content h1 span {
@@ -172,7 +172,7 @@ nav ul li a:hover:after {
 .typing-demo {
     width: 40%;
 
-    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     margin-right: 50px;
