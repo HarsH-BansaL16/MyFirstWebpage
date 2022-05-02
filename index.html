@@ -35,7 +35,7 @@
                 <li><a href="#about_me">About</a></li>
                 <li><a href="#skills_me">Skills</a></li>
                 <li><a href="#image">Profile</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="#data5">News</a></li>
                 <li><a href="#jstest">JS Test</a></li>
             </ul>
             <!-- <a href="#" class="btn" id="home1">Top</a> -->
@@ -158,6 +158,75 @@
     <br>
     <br>
     <br>
+    <center>
+        <div id="data5">
+            <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+                <table style="width: 100vw;">
+                    <tr>
+                        <th>
+                            <h1 style="color:#fd4766;background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent; font-size: 36px;">NEWS UPDATES</h1><br>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <center>
+                                    <div id="news" style="width: 100vw;">
+                                    </div>
+                                </center>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </marquee>
+        </div>
+    </center>
+    <fieldset>
+        <center>
+            <br>
+            <h1 style="color:#fd4766;background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; font-size: 36px;">INSERT DATA</h1><br>
+            <input id="inpdata" type="text" placeholder="enter the news" size="40" />
+            <br><br><br>
+            <button type="button" id="btn" class="btn">Insert News</button>
+            <br><br>
+        </center>
+    </fieldset>
+
+    <script>
+        // localStorage.clear();
+        const inpdata = document.getElementById("inpdata");
+        const btn = document.getElementById("btn");
+        const newsupdate = document.getElementById("news");
+
+        btn.onclick = function () {
+            const key = "";
+            const data = inpdata.value;
+            console.log(data);
+            console.log(key);
+
+            if (data) {
+                localStorage.setItem(data, key);
+                location.reload();
+            }
+        };
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            const value = localStorage.getItem(key);
+            newsupdate.innerHTML += `${key} ${value}<br>`;
+        }
+    </script>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <center>
@@ -190,6 +259,7 @@
     <br>
     <br>
     <br>
+
 
 
     <center>
@@ -241,7 +311,7 @@
             </center>
             <br>
             <a href="img/1.jpeg" class="btn">Internal</a>
-            <a href="https://www.iiit.ac.in/" class="btn">External</a>
+            <a href="https://www.google.com/" class="btn">External</a>
         </div>
     </center>
 
@@ -250,6 +320,10 @@
     <br>
     <a href="#nav_bar" class="btn" id="top_button">Top</a>
 
+
+    <br>
+    <br>
+    <br>
 
 </body>
 
