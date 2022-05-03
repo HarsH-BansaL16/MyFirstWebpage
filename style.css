@@ -7,7 +7,7 @@ a {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url(img/bg1.jpg);
+    background: url(Media/bg1.jpg);
     background-size: cover;
 }
 
@@ -121,7 +121,8 @@ nav ul li a:hover:after {
 
 .Heading_in_table {
     color: #1f1f25;
-    font-size: 15px;
+    font-size: 20px;
+    
     text-transform: uppercase;
     letter-spacing: 4px;
     display: inline-block;
@@ -196,6 +197,13 @@ nav ul li a:hover:after {
 #top_button {
     position: fixed;
     right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
+
+#top_button_1 {
+    position: fixed;
+    left: 10px;
     bottom: 10px;
     z-index: 100;
 }
